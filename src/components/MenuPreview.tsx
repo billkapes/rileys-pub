@@ -1,12 +1,8 @@
 // src/components/MenuPreview.tsx
 
-export default function MenuPreview() {
-  const items = [
-    "Guinness",
-    "Pepperoni Pizza",
-    "Irish Whiskey",
-  ];
+import { featuredMenuItems } from "@/data/menu";
 
+export default function MenuPreview() {
   return (
     <section
       id="menu"
@@ -18,14 +14,22 @@ export default function MenuPreview() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {items.map((item) => (
+          {featuredMenuItems.map((item) => (
             <div
-              key={item}
+              key={item.name}
               className="rounded-xl bg-white/10 p-6"
             >
-              <h3 className="text-2xl font-bold">
-                {item}
+              <h3 className="text-2xl font-bold mb-2">
+                {item.name}
               </h3>
+
+              <p className="text-gray-300">
+                {item.description}
+              </p>
+
+              <p className="mt-4 text-[#D6C08D] font-semibold">
+                {item.price}
+              </p>
             </div>
           ))}
         </div>

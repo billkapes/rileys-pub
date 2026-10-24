@@ -1,4 +1,4 @@
-// src/components/GalleryPreview.tsx
+import { galleryImages } from "@/data/gallery";
 
 export default function GalleryPreview() {
   return (
@@ -12,9 +12,15 @@ export default function GalleryPreview() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="h-64 bg-[#4A3426] rounded-xl" />
-          <div className="h-64 bg-[#24503F] rounded-xl" />
-          <div className="h-64 bg-[#B08D57] rounded-xl" />
+          {galleryImages.map((image) => (
+            <div
+              key={image.id}
+              className="h-64 rounded-xl"
+              style={{
+                backgroundColor: image.color,
+              }}
+            />
+          ))}
         </div>
       </div>
     </section>

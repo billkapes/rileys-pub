@@ -1,5 +1,7 @@
 // src/components/EventsPreview.tsx
 
+import { events } from "@/data/events";
+
 export default function EventsPreview() {
   return (
     <section
@@ -11,26 +13,24 @@ export default function EventsPreview() {
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6">
-        <article className="border rounded-xl p-6">
-          <h3 className="text-xl font-bold">
-            Irish Music Night
-          </h3>
-          <p>Wednesdays • 7 PM</p>
-        </article>
+        {events.map((event) => (
+          <article
+            key={event.title}
+            className="border rounded-xl p-6"
+          >
+            <h3 className="text-xl font-bold">
+              {event.title}
+            </h3>
 
-        <article className="border rounded-xl p-6">
-          <h3 className="text-xl font-bold">
-            Trivia Night
-          </h3>
-          <p>Coming Soon</p>
-        </article>
+            <p className="mt-2 text-[#183A2D]">
+              {event.date}
+            </p>
 
-        <article className="border rounded-xl p-6">
-          <h3 className="text-xl font-bold">
-            Game Day Specials
-          </h3>
-          <p>Major Sporting Events</p>
-        </article>
+            <p className="mt-3 text-gray-600">
+              {event.description}
+            </p>
+          </article>
+        ))}
       </div>
     </section>
   );

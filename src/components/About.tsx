@@ -1,5 +1,7 @@
 // src/components/About.tsx
 
+import { siteInfo } from "@/data/site";
+
 export default function About() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-24">
@@ -10,9 +12,7 @@ export default function About() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            Riley&apos;s Pub is a welcoming neighborhood gathering place
-            featuring cold pints, pizza, live music, and a relaxed
-            atmosphere inspired by traditional Irish pubs.
+            {siteInfo.about}
           </p>
         </div>
 

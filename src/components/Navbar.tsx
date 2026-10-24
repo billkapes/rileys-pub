@@ -24,7 +24,9 @@ export default function Navbar() {
               href="/"
               className="font-bold text-xl tracking-wide"
             >
-              Riley's Pub
+              <span aria-label="Riley's Pub">
+                Riley<span aria-hidden="true" className="relative -top-[0.5em] text-[0.55em] text-[#7BC67B]">☘</span>s Pub
+              </span>
             </Link>
 
             <div className="hidden md:flex gap-8">

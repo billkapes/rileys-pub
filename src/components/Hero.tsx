@@ -18,8 +18,8 @@ export default function Hero() {
           St. Louis • Missouri
         </p>
 
-        <h1 className="text-6xl md:text-8xl font-bold">
-          Riley&apos;s Pub
+        <h1 className="text-6xl md:text-8xl font-bold" aria-label="Riley's Pub">
+          Riley<span aria-hidden="true" className="relative -top-[0.5em] text-[0.55em] text-[#7BC67B]">☘</span>s Pub
         </h1>
 
         <p className="mt-6 text-lg md:text-2xl">
