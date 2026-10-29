@@ -1,10 +1,11 @@
 // src/components/Hero.tsx
 
 import Link from "next/link";
+import CTAButton from "./ui/cta-button";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center bg-[#183A2D]">
+    <section className="relative flex min-h-screen items-center justify-center pt-16 bg-[#183A2D]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -26,21 +27,13 @@ export default function Hero() {
           Pizza • Pints • Live Music
         </p>
 
-        <div className="mt-8 flex justify-center gap-4">
-          <Link
-            href="#menu"
-            className="bg-[#B08D57] px-6 py-3 rounded-lg font-semibold"
-          >
-            View Menu
-          </Link>
+        <CTAButton href="#menu">
+          View Menu
+        </CTAButton>
 
-          <Link
-            href="#visit"
-            className="border border-white px-6 py-3 rounded-lg"
-          >
-            Visit Us
-          </Link>
-        </div>
+        <CTAButton href="#visit">
+          Visit Us
+        </CTAButton>
       </div>
     </section>
   );

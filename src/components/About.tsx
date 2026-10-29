@@ -1,23 +1,27 @@
 // src/components/About.tsx
 
+import Section from "@/components/ui/section";
+import SectionHeader from "@/components/ui/section-header";
+
 import { siteInfo } from "@/data/site";
 
 export default function About() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-24">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+    <Section>
+      <div className="grid gap-12 md:grid-cols-2 md:items-center">
         <div>
-          <h2 className="text-4xl font-bold mb-6">
-            Your Neighborhood Irish Pub
-          </h2>
+          <SectionHeader
+            title="Your Neighborhood Irish Pub"
+            centered={false}
+          />
 
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg leading-relaxed text-muted-foreground">
             {siteInfo.about}
           </p>
         </div>
 
-        <div className="h-80 rounded-2xl bg-[#4A3426]" />
+        <div className="h-80 rounded-2xl bg-secondary" />
       </div>
-    </section>
+    </Section>
   );
 }

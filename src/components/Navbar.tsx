@@ -1,67 +1,104 @@
-// src/components/Navbar.tsx
-
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { Menu } from "lucide-react";
+
+import Brand from "./Brand";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
+const navLinks = [
+  {
+    label: "Menu",
+    href: "#menu",
+  },
+  {
+    label: "Events",
+    href: "#events",
+  },
+  {
+    label: "Gallery",
+    href: "#gallery",
+  },
+  {
+    label: "Visit",
+    href: "#visit",
+  },
+];
 
 export default function Navbar() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  const links = [
-    { href: "#menu", label: "Menu" },
-    { href: "#events", label: "Events" },
-    { href: "#gallery", label: "Gallery" },
-    { href: "#visit", label: "Visit" },
-  ];
-
   return (
     <header className="fixed top-0 z-50 w-full">
-      <nav className="backdrop-blur-md bg-[#183A2D]/90 text-white border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex h-16 items-center justify-between">
-            <Link
-              href="/"
-              className="font-bold text-xl tracking-wide"
-            >
-              <span aria-label="Riley's Pub">
-                Riley<span aria-hidden="true" className="relative -top-[0.5em] text-[0.55em] text-[#7BC67B]">☘</span>s Pub
-              </span>
-            </Link>
+      <nav className="border-b border-white/10 bg-primary/90 backdrop-blur-md">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+          {/* Logo */}
+          <Link href="/">
+            <Brand />
+          </Link>
 
-            <div className="hidden md:flex gap-8">
-              {links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="hover:text-[#D6C08D] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-
-            <button
-              className="md:hidden"
-              onClick={() => setMobileOpen(!mobileOpen)}
-            >
-              ☰
-            </button>
+          {/* Desktop Navigation */}
+          <div className="hidden items-center gap-8 md:flex">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="
+                  text-sm
+                  font-medium
+                  text-primary-foreground/90
+                  transition-colors
+                  hover:text-accent
+                "
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
-          {mobileOpen && (
-            <div className="md:hidden pb-4 flex flex-col gap-4">
-              {links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          )}
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger
+                aria-label="Open navigation menu"
+                className="
+                  rounded-md
+                  p-2
+                  text-primary-foreground
+                  transition-colors
+                  hover:bg-white/10
+                "
+              >
+                <Menu size={24} />
+              </SheetTrigger>
+
+              <SheetContent
+                side="right"
+                className="bg-background"
+              >
+                <div className="mt-10 flex flex-col gap-6">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      className="
+                        text-lg
+                        font-medium
+                        text-foreground
+                        transition-colors
+                        hover:text-accent
+                      "
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </nav>
     </header>

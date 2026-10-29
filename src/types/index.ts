@@ -18,6 +18,7 @@ export interface SocialLink {
 }
 
 export interface GalleryImage {
+  src: string;
   id: number;
   alt: string;
   color?: string;

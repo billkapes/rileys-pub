@@ -1,14 +1,17 @@
 // src/components/VisitSection.tsx
 
+import Section from "@/components/ui/section";
+import SectionHeader from "@/components/ui/section-header";
+
+import { siteInfo } from "@/data/site";
+
 export default function VisitSection() {
   return (
-    <section
-      id="visit"
-      className="max-w-6xl mx-auto px-6 py-24"
-    >
-      <h2 className="text-center text-4xl font-bold mb-12">
-        Visit Us
-      </h2>
+    <Section id="visit">
+      <SectionHeader
+        title="Visit Us"
+        subtitle="Join us for pizza, pints, and live music."
+      />
 
       <div className="grid md:grid-cols-2 gap-10">
         <div>
@@ -54,6 +57,6 @@ export default function VisitSection() {
 
         <div className="rounded-2xl h-80 bg-gray-300" />
       </div>
-    </section>
+    </Section>
   );
 }
