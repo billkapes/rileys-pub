@@ -5,11 +5,11 @@ import { SocialLink } from "@/types";
 export const socialLinks: SocialLink[] = [
   {
     name: "Facebook",
-    href: "https://facebook.com",
+    href: "https://facebook.com/rileyspubstl",
   },
 
   {
     name: "Instagram",
-    href: "https://instagram.com",
+    href: "https://instagram.com/rileyspubstl",
   },
 ];

@@ -29,6 +29,7 @@ export const drinkMenuItems = [
     category: "Drafts",
     price: "$6", 
   },
+  // Bottled Beers ------------
   {
     name: "Budweiser",
     category: "Beers",
@@ -54,6 +55,7 @@ export const drinkMenuItems = [
     category: "Beers",
     price: "$3",
   },
+  // Spirits ---------------
   {
     name: "Jameson",
     category: "Spirits",
@@ -64,6 +66,7 @@ export const drinkMenuItems = [
     category: "Spirits",
     price: "$4",
   },
+  // Wines ----------------
   {
     name: "Malbec",
     category: "Wines",
@@ -84,6 +87,7 @@ export const drinkMenuItems = [
     category: "Wines",
     price: "$6",
   },
+  // Specialty Drinks ---------------
   {
     name: "Espresso Martini",
     category: "Special",
