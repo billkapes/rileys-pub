@@ -49,30 +49,30 @@
 }
 
 :root {
-  --background: 40 33% 94%;
-  --foreground: 153 42% 16%;
+  --background: hsl(40 33% 94%);
+  --foreground: hsl(153 42% 16%);
 
-  --card: 0 0% 100%;
-  --card-foreground: 153 42% 16%;
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(153 42% 16%);
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 153 42% 16%;
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(153 42% 16%);
 
-  --primary: 153 42% 16%;
-  --primary-foreground: 40 33% 94%;
+  --primary: hsl(153 42% 16%);
+  --primary-foreground: hsl(40 33% 94%);
 
-  --secondary: 29 31% 22%;
-  --secondary-foreground: 40 33% 94%;
+  --secondary: hsl(29 31% 22%);
+  --secondary-foreground: hsl(40 33% 94%);
 
-  --accent: 41 34% 52%;
-  --accent-foreground: 0 0% 100%;
+  --accent: hsl(41 34% 52%);
+  --accent-foreground: hsl(0 0% 100%);
 
-  --muted: 40 15% 90%;
-  --muted-foreground: 153 20% 35%;
+  --muted: hsl(40 15% 90%);
+  --muted-foreground: hsl(153 20% 35%);
 
-  --border: 40 15% 85%;
-  --input: 40 15% 85%;
-  --ring: 41 34% 52%;
+  --border: hsl(40 15% 85%);
+  --input: hsl(40 15% 85%);
+  --ring: hsl(41 34% 52%);
 
   --radius: 1rem;
   --sidebar: oklch(0.985 0 0);

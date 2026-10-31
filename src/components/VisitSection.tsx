@@ -1,9 +1,8 @@
 // src/components/VisitSection.tsx
 
+import Image from "next/image";
 import Section from "@/components/ui/section";
 import SectionHeader from "@/components/ui/section-header";
-
-import { siteInfo } from "@/data/site";
 
 export default function VisitSection() {
   return (
@@ -55,7 +54,15 @@ export default function VisitSection() {
           </p>
         </div>
 
-        <div className="rounded-2xl h-80 bg-gray-300" />
+        <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg">
+          <Image
+            src="/images/hero.jpg"
+            alt="Riley's Pub storefront and patio on Arsenal Street."
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
+        </div>
       </div>
     </Section>
   );

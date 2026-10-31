@@ -19,7 +19,7 @@ export default function PubCard({
   return (
     <Card
       className={`
-        border-border
+        border
         bg-card
         shadow-md
         transition-all

@@ -23,7 +23,9 @@ export default function SectionHeader({
       </h2>
 
       {subtitle && (
-        <p className="mt-4 max-w-2xl text-muted-foreground">
+        <p
+          className={`mt-4 max-w-2xl ${centered ? "mx-auto" : ""} text-muted-foreground`}
+        >
           {subtitle}
         </p>
       )}

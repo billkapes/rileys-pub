@@ -5,22 +5,19 @@ import { GalleryImage } from "@/types";
 export const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    alt: "Pub Interior",
-    color: "#4A3426",
-    src: ""
+    alt: "Riley's Pub bar lined with local and favorite bottles beneath the tin ceiling.",
+    src: "/images/backbar.jpg",
   },
 
   {
     id: 2,
-    alt: "Bar",
-    color: "#24503F",
-    src: ""
+    alt: "Handwritten Riley's Pub pizza menu on a chalkboard.",
+    src: "/images/pizzachalkboard.jpg",
   },
 
   {
     id: 3,
-    alt: "Patio",
-    color: "#B08D57",
-    src: ""
+    alt: "Riley's Pub lantern sign glowing against the evening sky.",
+    src: "/images/lanternvanillaksy.jpg",
   },
 ];

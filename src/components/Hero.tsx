@@ -1,6 +1,5 @@
 // src/components/Hero.tsx
 
-import Link from "next/link";
 import CTAButton from "./ui/cta-button";
 
 export default function Hero() {
@@ -27,13 +26,15 @@ export default function Hero() {
           Pizza • Pints • Live Music
         </p>
 
-        <CTAButton href="#menu">
-          View Menu
-        </CTAButton>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <CTAButton href="#menu">
+            View Menu
+          </CTAButton>
 
-        <CTAButton href="#visit">
-          Visit Us
-        </CTAButton>
+          <CTAButton href="#visit">
+            Visit Us
+          </CTAButton>
+        </div>
       </div>
     </section>
   );
