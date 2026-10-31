@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Section from "@/components/ui/section";
 import SectionHeader from "@/components/ui/section-header";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function VisitSection() {
   return (
@@ -26,6 +27,7 @@ export default function VisitSection() {
           <p>
             <i>One block east of Grand and Arsenal</i>
           </p>
+          <SocialLinks className="mt-6 text-primary" />
           <br />
           <p>
             Open
@@ -56,7 +58,7 @@ export default function VisitSection() {
 
         <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/images/hero.jpg"
+            src="/images/lanternvanillasky.jpg"
             alt="Riley's Pub storefront and patio on Arsenal Street."
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

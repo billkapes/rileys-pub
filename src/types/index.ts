@@ -1,15 +1,10 @@
 // src/types/index.ts
 
-export interface MenuItem {
-  name: string;
-  description: string;
-  price: string;
-}
-
 export interface EventItem {
   title: string;
   date: string;
   description: string;
+  featured?: boolean;
 }
 
 export interface SocialLink {

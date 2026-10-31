@@ -1,23 +1,120 @@
-// src/data/menu.ts
-
-import { MenuItem } from "@/types";
-
-export const featuredMenuItems: MenuItem[] = [
+export const drinkMenuItems = [
   {
-    name: "Guinness",
-    description: "Classic Irish stout served perfectly poured.",
+    name: "Carlsberg",
+    category: "Drafts",
     price: "$6",
   },
-
   {
-    name: "Pepperoni Pizza",
-    description: "Thin crust St. Louis-style pizza.",
-    price: "$14",
+    name: "Yuengling",
+    category: "Drafts",
+    price: "$6",
   },
-
+  {
+    name: "Citropolis IPA",
+    category: "Drafts",
+    price: "$6", 
+  },
+    {
+    name: "Guinness",
+    category: "Drafts",
+    price: "$6", 
+  },
+  {
+    name: "Harp",
+    category: "Drafts",
+    price: "$6", 
+  },
+  {
+    name: "Smithwick's",
+    category: "Drafts",
+    price: "$6", 
+  },
+  {
+    name: "Budweiser",
+    category: "Beers",
+    price: "$4",
+  },
+  {
+    name: "Bud Light",
+    category: "Beers",
+    price: "$3",
+  },
+  {
+    name: "Blue Moon",
+    category: "Beers",
+    price: "$4",
+  },
+  {
+    name: "Stag",
+    category: "Beers",
+    price: "$3",
+  },
+  {
+    name: "Pabst Blue Ribbon",
+    category: "Beers",
+    price: "$3",
+  },
   {
     name: "Jameson",
-    description: "Smooth Irish whiskey.",
-    price: "$7",
+    category: "Spirits",
+    price: "$5",
   },
+  {
+    name: "Jim Beam",
+    category: "Spirits",
+    price: "$4",
+  },
+  {
+    name: "Malbec",
+    category: "Wines",
+    price: "$6",
+  },
+  {
+    name: "Chardonnay",
+    category: "Wines",
+    price: "$6",
+  },
+    {
+    name: "Cabernet Sauvignon",
+    category: "Wines",
+    price: "$6",
+  },
+    {
+    name: "Pinot Noir",
+    category: "Wines",
+    price: "$6",
+  },
+  {
+    name: "Espresso Martini",
+    category: "Special",
+    price: "$10",
+  },
+  {
+    name: "Jello Shot",
+    category: "Special",
+    price: "$3",
+  }
+];
+
+export const pizzaSizes = [
+  { size: "10-inch", price: "$8.00" },
+  { size: "12-inch", price: "$10.00" },
+  { size: "14-inch", price: "$12.00" },
+];
+
+export const additionalToppingPrice = "$1.00";
+
+export const pizzaToppings = [
+  "Pepperoni",
+  "Sausage",
+  "Bacon",
+  "Onion",
+  "Mushrooms",
+  "Green peppers",
+  "Jalapeños",
+  "Black olives",
+  "Banana peppers",
+  "Pineapple",
+  "Canadian bacon",
+  "Garlic",
 ];

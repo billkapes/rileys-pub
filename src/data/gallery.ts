@@ -18,6 +18,6 @@ export const galleryImages: GalleryImage[] = [
   {
     id: 3,
     alt: "Riley's Pub lantern sign glowing against the evening sky.",
-    src: "/images/lanternvanillaksy.jpg",
+    src: "/images/hero.jpg",
   },
 ];

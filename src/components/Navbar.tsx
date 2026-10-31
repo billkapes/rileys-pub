@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 
 import Brand from "./Brand";
+import SocialLinks from "./SocialLinks";
 
 import {
   Sheet,
@@ -14,19 +15,19 @@ import {
 const navLinks = [
   {
     label: "Menu",
-    href: "#menu",
+    href: "/#menu",
   },
   {
     label: "Events",
-    href: "#events",
+    href: "/events",
   },
   {
     label: "Gallery",
-    href: "#gallery",
+    href: "/#gallery",
   },
   {
     label: "Visit",
-    href: "#visit",
+    href: "/#visit",
   },
 ];
 
@@ -42,21 +43,24 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="
-                  text-sm
-                  font-medium
-                  text-primary-foreground/90
-                  transition-colors
-                  hover:text-accent
-                "
-              >
-                {link.label}
-              </Link>
-            ))}
+            <div className="flex items-center gap-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="
+                    text-sm
+                    font-medium
+                    text-primary-foreground/90
+                    transition-colors
+                    hover:text-accent
+                  "
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <SocialLinks className="text-primary-foreground/90" />
           </div>
 
           {/* Mobile Navigation */}
@@ -95,6 +99,7 @@ export default function Navbar() {
                       {link.label}
                     </Link>
                   ))}
+                  <SocialLinks className="mt-2 text-foreground" />
                 </div>
               </SheetContent>
             </Sheet>
