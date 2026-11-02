@@ -11,9 +11,9 @@ export const events: EventItem[] = [
   },
 
   {
-    title: "Half Price Pizzas",
+    title: "Half-Price Pizzas",
     date: "Mondays and Tuesdays • 5 PM - 10 PM",
-    description: "Enjoy half price Large Pizzas on Mondays and Tuesdays. Dine-in only. Wait times may be longer than usual.",
+    description: "Enjoy half-price Large Pizzas on Mondays and Tuesdays. *Dine-in only *Wait times may be longer than usual",
     featured: true,
   },
 

@@ -23,7 +23,7 @@ export default function About() {
 
         <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg md:h-[28rem]">
           <Image
-            src="/images/rembrandt.jpg"
+            src="/images/rembrandt.webp"
             alt="Warm interior of Riley's Pub, with its wood bar and chalkboard menus."
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

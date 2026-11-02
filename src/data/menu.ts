@@ -1,33 +1,47 @@
-export const drinkMenuItems = [
+import type { DrinkMenuItem } from "@/types";
+
+export const drinkMenuItems: DrinkMenuItem[] = [
   {
     name: "Carlsberg",
     category: "Drafts",
     price: "$6",
+    abv: 5.0,
   },
   {
     name: "Yuengling",
     category: "Drafts",
     price: "$6",
+    abv: 4.2,
   },
   {
     name: "Citropolis IPA",
     category: "Drafts",
     price: "$6", 
+    abv: 6.5,
   },
-    {
+  {
     name: "Guinness",
     category: "Drafts",
     price: "$6", 
+    abv: 4.2,
   },
   {
     name: "Harp",
     category: "Drafts",
     price: "$6", 
+    abv: 4.5,
   },
   {
     name: "Smithwick's",
     category: "Drafts",
-    price: "$6", 
+    price: "$6",
+    abv: 4.8,
+  },
+  {
+    name: "STL IPA",
+    category: "Drafts",
+    price: "$6",
+    abv: 6.0,
   },
   // Bottled Beers ------------
   {
@@ -37,6 +51,11 @@ export const drinkMenuItems = [
   },
   {
     name: "Bud Light",
+    category: "Beers",
+    price: "$3",
+  },
+  {
+    name: "Bud Select",
     category: "Beers",
     price: "$3",
   },
@@ -55,6 +74,16 @@ export const drinkMenuItems = [
     category: "Beers",
     price: "$3",
   },
+  {
+    name: "Miller High Life",
+    category: "Beers",
+    price: "$3",
+  },
+  {
+    name: "Busch",
+    category: "Beers",
+    price: "$3",
+  },
   // Spirits ---------------
   {
     name: "Jameson",
@@ -63,6 +92,16 @@ export const drinkMenuItems = [
   },
   {
     name: "Jim Beam",
+    category: "Spirits",
+    price: "$4",
+  },
+  {
+    name: "Jack Daniel's",
+    category: "Spirits",
+    price: "$4",
+  },
+  {
+    name: "Espolon",
     category: "Spirits",
     price: "$4",
   },

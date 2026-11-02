@@ -44,7 +44,14 @@ export default function DrinksMenuPage() {
                         key={item.name}
                         className="flex items-baseline justify-between gap-4 border-b border-border/60 py-2 last:border-b-0"
                       >
-                        <span>{item.name}</span>
+                        <span>
+                          {item.name}
+                          {item.abv !== undefined && (
+                            <span className="ml-2 text-sm text-muted-foreground">
+                              {item.abv}%
+                            </span>
+                          )}
+                        </span>
                         <span className="shrink-0 font-medium">{item.price}</span>
                       </li>
                     ))}

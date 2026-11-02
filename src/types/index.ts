@@ -1,5 +1,12 @@
 // src/types/index.ts
 
+export interface DrinkMenuItem {
+  name: string;
+  category: string;
+  price: string;
+  abv?: number;
+}
+
 export interface EventItem {
   title: string;
   date: string;

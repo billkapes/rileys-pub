@@ -30,7 +30,7 @@ export default function VisitSection() {
           <SocialLinks className="mt-6 text-primary" />
           <br />
           <p>
-            Open
+            <b>Open</b>
             <br />
             <span className="grid grid-cols-[9.5rem_1fr]">
               <span>Monday - Saturday:</span>
@@ -43,7 +43,7 @@ export default function VisitSection() {
           </p>
           <br />
           <p>
-            Pizza
+            <b>Pizza</b>
             <br />
             <span className="grid grid-cols-[9.5rem_1fr]">
               <span>Sunday - Thursday:</span>
@@ -58,7 +58,7 @@ export default function VisitSection() {
 
         <div className="relative h-80 overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/images/lanternvanillasky.jpg"
+            src="/images/lanternvanillasky.webp"
             alt="Riley's Pub storefront and patio on Arsenal Street."
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
