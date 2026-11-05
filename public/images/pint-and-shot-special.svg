@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960" fill="none">
+  <defs>
+    <linearGradient id="background" x1="72" y1="48" x2="650" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214B39"/>
+      <stop offset="1" stop-color="#10291F"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="112" y1="178" x2="608" y2="758" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0C27F"/>
+      <stop offset="1" stop-color="#A77B3C"/>
+    </linearGradient>
+    <linearGradient id="pint" x1="260" y1="340" x2="420" y2="652" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2AD49"/>
+      <stop offset="1" stop-color="#9B541F"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="960" rx="8" fill="url(#background)"/>
+  <rect x="22" y="22" width="676" height="916" rx="5" stroke="url(#gold)" stroke-width="3"/>
+  <rect x="38" y="38" width="644" height="884" rx="3" stroke="#D8BD7D" stroke-opacity=".42"/>
+
+  <g fill="#D8BD7D" opacity=".92">
+    <path d="M92 93c-17-24-49-8-35 15 8 13 29 10 35 0 6 10 27 13 35 0 14-23-18-39-35-15Zm0 16c-6 10-7 19-4 28h8c3-9 2-18-4-28Z"/>
+    <path d="M628 93c-17-24-49-8-35 15 8 13 29 10 35 0 6 10 27 13 35 0 14-23-18-39-35-15Zm0 16c-6 10-7 19-4 28h8c3-9 2-18-4-28Z"/>
+  </g>
+
+  <text x="360" y="111" text-anchor="middle" fill="#E5CE98" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="5">RILEY'S PUB • ST. LOUIS</text>
+  <path d="M174 139h372" stroke="#C9A963" stroke-opacity=".7"/>
+  <text x="360" y="202" text-anchor="middle" fill="#FFF6E5" font-family="Georgia, serif" font-size="52" font-weight="700" letter-spacing="2">PINT &amp; SHOT</text>
+  <text x="360" y="246" text-anchor="middle" fill="#D8BD7D" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="7">PUB SPECIAL</text>
+
+  <g>
+    <path d="M266 322h188l-17 300c-2 27-22 47-49 47h-56c-27 0-47-20-49-47l-17-300Z" fill="#F4E9D1" fill-opacity=".08" stroke="#E8D8B5" stroke-width="7"/>
+    <path d="M284 389h151l-13 228c-1 16-13 28-29 28h-67c-16 0-28-12-29-28l-13-228Z" fill="url(#pint)"/>
+    <path d="M284 389c2-29 20-48 40-48 14 0 23 10 36 10s22-10 36-10c20 0 38 19 40 48H284Z" fill="#F7EEDC"/>
+    <path d="M454 365h22c36 0 53 24 53 56v78c0 32-17 56-53 56h-27" stroke="#E8D8B5" stroke-width="12" stroke-linecap="round"/>
+    <path d="M317 444v154" stroke="#F7D894" stroke-opacity=".4" stroke-width="8" stroke-linecap="round"/>
+    <path d="M330 663h60" stroke="#D8BD7D" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M171 584h92l-7 67c-2 18-14 30-32 30h-14c-18 0-30-12-32-30l-7-67Z" fill="#F4E9D1" fill-opacity=".08" stroke="#E8D8B5" stroke-width="6"/>
+    <path d="M177 603h80l-5 47c-1 12-9 20-21 20h-28c-12 0-20-8-21-20l-5-47Z" fill="#B66C31"/>
+    <path d="M166 578c8-13 18-18 28-18 9 0 15 7 24 7s15-7 24-7c10 0 20 5 28 18H166Z" fill="#F7EEDC"/>
+  </g>
+
+  <text x="360" y="766" text-anchor="middle" fill="#FFF6E5" font-family="Georgia, serif" font-size="31" font-weight="700">A draft pint, paired with</text>
+  <text x="360" y="807" text-anchor="middle" fill="#FFF6E5" font-family="Georgia, serif" font-size="31" font-weight="700">an Irish whiskey shot.</text>
+  <text x="360" y="854" text-anchor="middle" fill="#D8BD7D" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">ASK YOUR BARTENDER FOR TODAY'S POUR</text>
+  <path d="M255 878h210" stroke="#C9A963" stroke-opacity=".7"/>
+  <text x="360" y="903" text-anchor="middle" fill="#D8CBB0" font-family="Arial, sans-serif" font-size="12" letter-spacing="1">SAMPLE MOCKUP • 21+ • PLEASE DRINK RESPONSIBLY</text>
+</svg>
