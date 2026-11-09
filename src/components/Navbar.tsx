@@ -95,12 +95,15 @@ export default function Navbar() {
               >
                 <div className="flex h-full flex-col">
                   <SheetHeader className="border-b border-border px-6 pb-5 pt-8">
-                    <SheetTitle className="text-xl font-bold">
-                      Riley&apos;s Pub
-                    </SheetTitle>
-                    <SheetDescription>
-                      St. Louis neighborhood pub
-                    </SheetDescription>
+                    <Link href="/">
+
+                      <SheetTitle className="text-xl font-bold">
+                        Riley&apos;s Pub
+                      </SheetTitle>
+                      <SheetDescription>
+                        St. Louis neighborhood pub
+                      </SheetDescription>
+                    </Link>
                   </SheetHeader>
 
                   <nav aria-label="Mobile navigation" className="px-4 py-5">

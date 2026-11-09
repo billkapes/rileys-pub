@@ -1,11 +1,7 @@
 import Link from "next/link";
 import PubCard from "@/components/cards/PubCard";
 import Container from "@/components/ui/container";
-import {
-  additionalToppingPrice,
-  pizzaSizes,
-  pizzaToppings,
-} from "@/data/menu";
+import { pizzaSizes, pizzaToppings } from "@/data/menu";
 
 export default function PizzaMenuPage() {
   return (
@@ -34,11 +30,16 @@ export default function PizzaMenuPage() {
           Sample prices for now; confirm current pricing with us.
         </p>
         <div className="grid gap-5 sm:grid-cols-3">
-          {pizzaSizes.map(({ size, price }) => (
+          {pizzaSizes.map(({ size, price, additionalToppingPrice }) => (
             <PubCard key={size}>
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="text-xl font-semibold">{size}</h3>
-                <span className="font-bold text-accent">{price}</span>
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="text-xl font-semibold">{size}</h3>
+                  <span className="font-bold text-accent">{price}</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Extra topping: {additionalToppingPrice}
+                </p>
               </div>
             </PubCard>
           ))}
@@ -50,8 +51,8 @@ export default function PizzaMenuPage() {
           Toppings
         </h2>
         <p className="mb-5 text-sm text-muted-foreground">
-          Additional toppings: {additionalToppingPrice} each (sample price).
-          Mozzarella cheese is also available.
+          Extra-topping prices vary by pizza size. <b>Mozzarella
+          cheese is also available.</b>
         </p>
         <PubCard>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

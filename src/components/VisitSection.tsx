@@ -1,7 +1,7 @@
 // src/components/VisitSection.tsx
 
 import Image from "next/image";
-import { Clock3, MapPin, Phone } from "lucide-react";
+import { Clock3, MapPin, Phone, Pizza } from "lucide-react";
 import Section from "@/components/ui/section";
 import SectionHeader from "@/components/ui/section-header";
 import SocialLinks from "@/components/SocialLinks";
@@ -43,20 +43,21 @@ export default function VisitSection() {
               </span>
             </span>
           </a>
+          <SocialLinks className="mt-6 text-[#183A2D]" />
 
           <a
             href={`tel:${siteInfo.contact.phone.replace(/[^\d+]/g, "")}`}
             className="mt-1 inline-flex min-h-11 items-center gap-3 rounded-xl px-3 font-semibold text-[#183A2D] transition-colors hover:bg-[#F5F0E6] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#183A2D]"
           >
-            <Phone aria-hidden="true" className="text-[#987443]" size={18} />
-            {siteInfo.contact.phone}
+            {/* <Phone aria-hidden="true" className="text-[#987443]" size={18} />
+            {siteInfo.contact.phone} */}
           </a>
 
           <div className="my-6 border-t border-[#183A2D]/10" />
 
           <div className="flex items-center gap-2 text-[#183A2D]">
             <Clock3 aria-hidden="true" className="text-[#987443]" size={19} />
-            <h4 className="font-bold">Hours</h4>
+            <h4 className="font-bold">Open Hours</h4>
           </div>
           <dl className="mt-3 space-y-2 text-sm text-[#4A3426] sm:text-base">
             <div className="flex justify-between gap-3">
@@ -69,7 +70,10 @@ export default function VisitSection() {
             </div>
           </dl>
 
-          <h4 className="mt-5 font-bold text-[#183A2D]">Pizza hours</h4>
+          <div className="flex items-center mt-3 gap-2 text-[#183A2D]">
+            <Pizza aria-hidden="true" className="text-[#987443]" size={19} />
+            <h4 className="font-bold text-[#183A2D]">Pizza Hours</h4>
+          </div>
           <dl className="mt-2 space-y-2 text-sm text-[#4A3426] sm:text-base">
             <div className="flex justify-between gap-3">
               <dt>Sunday – Thursday</dt>
@@ -81,7 +85,6 @@ export default function VisitSection() {
             </div>
           </dl>
 
-          <SocialLinks className="mt-6 text-[#183A2D]" />
         </div>
 
         <div className="group relative min-h-80 overflow-hidden rounded-2xl border border-[#B08D57]/40 shadow-xl md:min-h-full">

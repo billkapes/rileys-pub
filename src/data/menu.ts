@@ -140,12 +140,10 @@ export const drinkMenuItems: DrinkMenuItem[] = [
 ];
 
 export const pizzaSizes = [
-  { size: "10-inch", price: "$8.00" },
-  { size: "12-inch", price: "$10.00" },
-  { size: "14-inch", price: "$12.00" },
+  { size: "10-inch", price: "$10.00", additionalToppingPrice: "$1.00" },
+  { size: "12-inch", price: "$12.00", additionalToppingPrice: "$1.50" },
+  { size: "14-inch", price: "$15.00", additionalToppingPrice: "$2.00" },
 ];
-
-export const additionalToppingPrice = "$1.00";
 
 export const pizzaToppings = [
   "Pepperoni",
