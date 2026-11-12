@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import MenuPreview from "@/components/MenuPreview";
 import PromotionsPreview from "@/components/PromotionsPreview";
+import DailyDraftSpecials from "@/components/DailyDraftSpecials";
 import EventsPreview from "@/components/EventsPreview";
 import GalleryPreview from "@/components/GalleryPreview";
 import VisitSection from "@/components/VisitSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <MenuPreview />
         <PromotionsPreview />
+        <DailyDraftSpecials />
         <EventsPreview />
         <GalleryPreview />
         <VisitSection />

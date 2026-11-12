@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" fill="none">
+  <defs>
+    <linearGradient id="wood" x1="20" y1="0" x2="620" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#553923"/>
+      <stop offset="1" stop-color="#21170F"/>
+    </linearGradient>
+    <radialGradient id="crust" cx="0" cy="0" r="1" gradientTransform="matrix(0 168 -226 0 320 226)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0C77C"/>
+      <stop offset=".83" stop-color="#C9823A"/>
+      <stop offset="1" stop-color="#8D4C28"/>
+    </radialGradient>
+    <radialGradient id="cheese" cx="0" cy="0" r="1" gradientTransform="matrix(0 136 -188 0 320 224)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8E5AE"/>
+      <stop offset="1" stop-color="#E9B95F"/>
+    </radialGradient>
+    <filter id="shadow" x="85" y="52" width="470" height="386" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+  </defs>
+  <rect width="640" height="480" rx="28" fill="url(#wood)"/>
+  <path d="M22 86c124-32 243 38 382 0 84-23 155-15 214 2M0 394c133-44 245 30 377 3 98-20 174-13 263 14" stroke="#D3A56C" stroke-opacity=".14" stroke-width="8"/>
+  <ellipse cx="320" cy="244" rx="210" ry="166" fill="#000" fill-opacity=".4" filter="url(#shadow)"/>
+  <ellipse cx="320" cy="226" rx="202" ry="158" fill="url(#crust)" stroke="#F0D39B" stroke-width="5"/>
+  <ellipse cx="320" cy="226" rx="179" ry="135" fill="url(#cheese)"/>
+  <path d="M152 206c18-65 79-103 145-108M438 147c31 24 52 54 62 91M165 292c32 33 76 54 124 61" stroke="#FFF0C9" stroke-opacity=".5" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#B9472D" stroke="#9D3824" stroke-width="4">
+    <circle cx="226" cy="154" r="20"/><circle cx="319" cy="127" r="19"/><circle cx="403" cy="164" r="21"/>
+    <circle cx="180" cy="224" r="19"/><circle cx="274" cy="215" r="20"/><circle cx="368" cy="224" r="19"/><circle cx="458" cy="224" r="18"/>
+    <circle cx="222" cy="292" r="20"/><circle cx="318" cy="299" r="19"/><circle cx="407" cy="290" r="20"/>
+  </g>
+  <g fill="#F0794C" opacity=".8">
+    <circle cx="220" cy="148" r="5"/><circle cx="313" cy="121" r="5"/><circle cx="397" cy="158" r="5"/>
+    <circle cx="174" cy="218" r="5"/><circle cx="268" cy="209" r="5"/><circle cx="362" cy="218" r="5"/><circle cx="452" cy="218" r="5"/>
+    <circle cx="216" cy="286" r="5"/><circle cx="312" cy="293" r="5"/><circle cx="401" cy="284" r="5"/>
+  </g>
+  <g fill="#527343">
+    <circle cx="273" cy="161" r="6"/><circle cx="350" cy="175" r="5"/><circle cx="233" cy="239" r="5"/>
+    <circle cx="323" cy="250" r="6"/><circle cx="418" cy="250" r="5"/><circle cx="270" cy="327" r="5"/><circle cx="365" cy="320" r="6"/>
+  </g>
+  <rect x="22" y="22" width="596" height="436" rx="18" stroke="#E1BD7C" stroke-opacity=".3" stroke-width="2"/>
+</svg>

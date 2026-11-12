@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" fill="none">
+  <defs>
+    <linearGradient id="background" x1="30" y1="0" x2="610" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214B39"/>
+      <stop offset="1" stop-color="#10291F"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="243" y1="105" x2="405" y2="383" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8E8" stop-opacity=".36"/>
+      <stop offset=".5" stop-color="#FFF8E8" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#D6C08D" stop-opacity=".24"/>
+    </linearGradient>
+    <linearGradient id="beer" x1="265" y1="174" x2="372" y2="362" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D779"/>
+      <stop offset=".48" stop-color="#DDA63C"/>
+      <stop offset="1" stop-color="#A65B21"/>
+    </linearGradient>
+    <filter id="shadow" x="143" y="46" width="354" height="393" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+  </defs>
+  <rect width="640" height="480" rx="28" fill="url(#background)"/>
+  <path d="M25 92c124-30 243 34 375 4 91-21 166-17 215 1M9 391c126-35 239 22 367 3 98-15 177-12 256 14" stroke="#D8BD7D" stroke-opacity=".16" stroke-width="8"/>
+  <ellipse cx="320" cy="391" rx="155" ry="25" fill="#000" fill-opacity=".4" filter="url(#shadow)"/>
+  <path d="M226 112h188l-17 240c-2 24-19 41-43 41h-68c-24 0-41-17-43-41l-17-240Z" fill="url(#glass)" stroke="#F5E9CE" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M414 145h20c42 0 64 27 64 68v75c0 41-22 68-64 68h-24" stroke="#F5E9CE" stroke-width="13" stroke-linecap="round"/>
+  <path d="M245 187h150l-12 164c-1 14-10 23-25 23h-76c-15 0-24-9-25-23l-12-164Z" fill="url(#beer)"/>
+  <path d="M243 190c3-35 20-54 42-54 18 0 26 12 39 12s21-12 39-12c22 0 39 19 42 54H243Z" fill="#FFF9E9"/>
+  <path d="M256 178c8-30 21-45 38-45 13 0 19 9 30 9 10 0 17-9 30-9 16 0 30 14 37 45H256Z" fill="#F8F1E2"/>
+  <path d="M274 220v114" stroke="#FFF1C7" stroke-opacity=".5" stroke-width="9" stroke-linecap="round"/>
+  <path d="M303 390h55" stroke="#E8C772" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="181" cy="133" r="3" fill="#F3D889"/>
+  <circle cx="454" cy="113" r="4" fill="#F3D889"/>
+  <circle cx="477" cy="388" r="3" fill="#F3D889"/>
+  <circle cx="161" cy="335" r="4" fill="#F3D889"/>
+  <rect x="22" y="22" width="596" height="436" rx="18" stroke="#D8BD7D" stroke-opacity=".32" stroke-width="2"/>
+</svg>

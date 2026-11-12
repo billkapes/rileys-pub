@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import PubCard from "@/components/cards/PubCard";
 import Container from "@/components/ui/container";
 import { pizzaSizes, pizzaToppings } from "@/data/menu";
@@ -13,22 +14,52 @@ export default function PizzaMenuPage() {
         ← Back to menus
       </Link>
 
-      <header className="mb-10">
-        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-          Pizza
-        </h1>
-        <p className="mt-4 max-w-2xl text-muted-foreground">
-          St. Louis-style pizza, made to share.
-        </p>
+      <header className="mb-10 grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(20rem,0.9fr)] md:items-center">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
+            Pizza
+          </h1>
+          <p className="mt-4 max-w-2xl text-muted-foreground">
+            St. Louis-style pizza, made to share.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <figure className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-[#B08D57]/50 bg-[#29190F] shadow-lg">
+            <Image
+              src="/images/pizza-placeholder-classic.svg"
+              alt="Illustrated placeholder for a St. Louis-style pepperoni pizza."
+              fill
+              sizes="(max-width: 768px) 50vw, 22vw"
+              className="object-cover"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-3 pb-3 pt-8 text-xs font-semibold text-white sm:px-4 sm:pb-4 sm:text-sm">
+              Classic
+              <span className="ml-1 font-normal text-white/70"> · sample art</span>
+            </figcaption>
+          </figure>
+          <figure className="relative mt-6 aspect-[4/3] overflow-hidden rounded-2xl border border-[#B08D57]/50 bg-[#172C24] shadow-lg sm:mt-8">
+            <Image
+              src="/images/pizza-placeholder-garden.svg"
+              alt="Illustrated placeholder for a St. Louis-style vegetable pizza."
+              fill
+              sizes="(max-width: 768px) 50vw, 22vw"
+              className="object-cover"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-3 pb-3 pt-8 text-xs font-semibold text-white sm:px-4 sm:pb-4 sm:text-sm">
+              Garden
+              <span className="ml-1 font-normal text-white/70"> · sample art</span>
+            </figcaption>
+          </figure>
+        </div>
       </header>
 
       <section aria-labelledby="pizza-sizes">
         <h2 id="pizza-sizes" className="mb-5 text-2xl font-semibold">
           Sizes
         </h2>
-        <p className="mb-5 text-sm text-muted-foreground">
+        {/* <p className="mb-5 text-sm text-muted-foreground">
           Sample prices for now; confirm current pricing with us.
-        </p>
+        </p> */}
         <div className="grid gap-5 sm:grid-cols-3">
           {pizzaSizes.map(({ size, price, additionalToppingPrice }) => (
             <PubCard key={size}>

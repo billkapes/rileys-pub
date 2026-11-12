@@ -38,6 +38,11 @@ const navLinks = [
     href: "/#gallery",
     icon: Images,
   },
+    {
+    label: "Specials",
+      href: "/#promotions",
+    icon: Images,
+  },
   {
     label: "Visit",
     href: "/#visit",
@@ -95,7 +100,7 @@ export default function Navbar() {
               >
                 <div className="flex h-full flex-col">
                   <SheetHeader className="border-b border-border px-6 pb-5 pt-8">
-                    <Link href="/">
+                    <Link href="/" onClick={() => setMobileMenuOpen(false)}>
 
                       <SheetTitle className="text-xl font-bold">
                         Riley&apos;s Pub

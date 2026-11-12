@@ -70,7 +70,7 @@ export default function VisitSection() {
             </div>
           </dl>
 
-          <div className="flex items-center mt-3 gap-2 text-[#183A2D]">
+          <div className="flex items-center mt-4 gap-2 text-[#183A2D]">
             <Pizza aria-hidden="true" className="text-[#987443]" size={19} />
             <h4 className="font-bold text-[#183A2D]">Pizza Hours</h4>
           </div>

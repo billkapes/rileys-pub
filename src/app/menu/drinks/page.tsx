@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import PubCard from "@/components/cards/PubCard";
 import Container from "@/components/ui/container";
 import { drinkMenuItems } from "@/data/menu";
@@ -13,16 +14,31 @@ export default function DrinksMenuPage() {
         ← Back to menus
       </Link>
 
-      <header className="mb-10">
-        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-          Drink List
-        </h1>
-        <p className="mt-4 max-w-2xl text-muted-foreground">
-          A sample of what you might find at the bar.
-        </p>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Sample items and prices for now; replace with the current drink list.
-        </p>
+      <header className="mb-10 grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(20rem,0.9fr)] md:items-center">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
+            Drink List
+          </h1>
+          <p className="mt-4 max-w-2xl text-muted-foreground">
+            A sample of what you might find at the bar.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Sample items and prices for now; replace with the current drink list.
+          </p>
+        </div>
+        <figure className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-[#B08D57]/50 bg-[#10291F] shadow-lg">
+          <Image
+            src="/images/drink-placeholder-pint.svg"
+            alt="Illustrated placeholder of a golden pint of beer."
+            fill
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="object-cover"
+          />
+          <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-4 pb-4 pt-10 text-sm font-semibold text-white">
+            A good pint
+            <span className="ml-1 font-normal text-white/70"> · sample art</span>
+          </figcaption>
+        </figure>
       </header>
 
       <div className="grid gap-5 sm:grid-cols-2">
